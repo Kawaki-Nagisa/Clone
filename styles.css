@@ -1,0 +1,138 @@
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+.landing{
+    display: flex;
+    height: 60vmin;
+    width: 100%;
+    object-fit: cover;
+}
+.landing img{
+    width: 35vmax;
+}
+.hero{
+    width: 65vmax;
+    background-color: coral;
+}
+h1, .hero p, .hero button{
+    margin: 0 0 2vmax 2vmax;
+    position:relative;
+    top: 20vmin;
+}
+h1{
+font-size: 4vmax;
+}
+button{
+    cursor: pointer;
+    border: 0;
+    background-color: blanchedalmond;
+    width: 10vmax;
+    height: 4vh;
+    font-size: 0.8vmax;
+}
+.nav-bar{
+    position:absolute;
+    left: 65vmax;
+}
+.nav-bar button{
+background-color: rgba(0,0,0,0);
+width: 11vmax;
+}
+
+h2,p{
+    margin: 0 0 2vmax 2vmax;
+    font-size: 4vmin;
+}
+p{
+    font-size: 2vmin;
+}
+.b-floater{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: coral;
+    padding: 3vmax auto;
+    height: 30vmin;
+}
+.b-floater h2{
+    padding-top:10vmin;
+}
+.mid1, .mid2{
+padding: 10vmin 5vmax;
+display: flex;
+justify-content: space-between;
+flex-direction: row;
+}
+.mid2{
+    flex-direction: row-reverse;
+}
+.radio-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.radio-right img{
+    width: 5vmax;
+    height: 5vmax;
+    padding-left: 6vmax;
+}
+.text{
+    display: block;
+    width: 49vmax;
+}
+.center{
+    background-color: #f0ebd3;
+}
+.image{
+    width:10vmax;
+    height:20vmin;
+    background: linear-gradient(90deg, #cfcfcf21, #94812e);
+    transform: rotate(-40deg);
+    
+}
+.image img{
+    width:10vmax;
+    height:20vmin;
+    transform: rotate(40deg);
+}
+.radio{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 5vmax 8vmax;
+}
+.side{
+    width: 25vmax;
+    height: 70vmin;
+    object-fit: cover;
+    padding-right: 10vmax;
+}
+h3{
+    align-self: center;
+    padding-left:5vmin;
+    font-size: 3vmin;
+}
+.radio-right h2{
+    margin: 0 2vmax 0;
+    padding-left: 4vmax;
+}
+.tag, .tag-header{
+    display: flex;
+    flex-direction: row;
+}
+.tag-block,.tag-header-block 
+{
+    height:6vh;
+    align-self: center;
+}
+.tag-block
+{
+    width:2vh;
+    background-color: rgb(218, 94, 49);
+}
+.tag-header-block 
+{
+    width: 6vw;
+    background-color: #94812e;
+}
