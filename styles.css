@@ -1,36 +1,89 @@
-body{
+/*General*/
+
+body
+{
     margin: 0;
     overflow-x: hidden;
 }
-.landing{
-    display: flex;
-    height: 60vmin;
-    width: 100%;
-    object-fit: cover;
-}
-.landing img{
-    width: 35vmax;
-}
-.hero{
-    width: 65vmax;
-    background-color: coral;
-}
-h1, .hero p, .hero button{
-    margin: 0 0 2vmax 2vmax;
-    position:relative;
-    top: 20vmin;
-}
-h1{
-font-size: 4vmax;
-}
-button{
+
+button
+{
     cursor: pointer;
     border: 0;
     background-color: blanchedalmond;
-    width: 10vmax;
-    height: 4vh;
-    font-size: 0.8vmax;
+    width: 200px;
+    height: 50px;
+    font-size: 15px;
 }
+
+h2,p
+{
+    margin: 0 0 2vmax 2vmax; 
+}
+
+h2
+{
+    font-size: 40px;
+}
+
+p
+{
+    font-size: 20px;
+}
+
+/*Landing*/
+
+.landing
+{
+    display: flex;
+    justify-content: space-between;
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.hero
+{
+    width: 65vmax;
+    background-color: coral;
+}
+
+h1
+{
+padding-left:2vmax;
+font-size: 60px;
+}
+
+.title, .hero p, .hero button
+{
+    margin: 0 0 2vmax 4vmax;
+    position:relative;
+    top: 20vmin;
+}
+
+.title
+{
+    margin-left:0;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    width: 65vmax;
+    margin-bottom: 0%;
+}
+
+.title-block-1, .title-block-2
+{
+    background-color: rgb(255, 228, 106);
+    width:1vmax;
+    height:100px;
+    align-self: center;
+}
+
+.title-block-filler
+{
+    flex-grow: 1;
+}
+
 .nav-bar{
     position:absolute;
     left: 65vmax;
@@ -40,99 +93,216 @@ background-color: rgba(0,0,0,0);
 width: 11vmax;
 }
 
-h2,p{
-    margin: 0 0 2vmax 2vmax;
-    font-size: 4vmin;
+.menu
+{
+    display: none;
 }
-p{
-    font-size: 2vmin;
+
+.landing img
+{
+    width:35vmax;
+    height:600px;
+    object-fit: cover;
 }
-.b-floater{
+
+/*Content*/
+
+.center
+{
+    padding-top: 10vh;
+    background-color: #f0ebd3;
+    width: 100vmax;
+}
+
+.mid1, .mid2
+{
+    padding: 10vmin 5vmax;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: coral;
-    padding: 3vmax auto;
-    height: 30vmin;
+    justify-content: space-between;
+    flex-direction: row;
 }
-.b-floater h2{
-    padding-top:10vmin;
-}
-.mid1, .mid2{
-padding: 10vmin 5vmax;
-display: flex;
-justify-content: space-between;
-flex-direction: row;
-}
-.mid2{
+
+.mid2
+{
     flex-direction: row-reverse;
 }
-.radio-right{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-.radio-right img{
-    width: 5vmax;
-    height: 5vmax;
-    padding-left: 6vmax;
-}
-.text{
+
+.text
+{
     display: block;
     width: 49vmax;
 }
-.center{
-    background-color: #f0ebd3;
-}
-.image{
-    width:10vmax;
-    height:20vmin;
+
+.image
+{
+    width:220px;
+    height:180px;
     background: linear-gradient(90deg, #cfcfcf21, #94812e);
-    transform: rotate(-40deg);
-    
+    transform: rotate(-40deg);    
 }
-.image img{
-    width:10vmax;
-    height:20vmin;
+
+.image img
+{
+    width:180px;
+    height:180px;
     transform: rotate(40deg);
 }
-.radio{
+
+/*Tags*/
+
+.radio
+{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     padding: 5vmax 8vmax;
 }
-.side{
+
+.side
+{
     width: 25vmax;
     height: 70vmin;
     object-fit: cover;
     padding-right: 10vmax;
 }
-h3{
-    align-self: center;
-    padding-left:5vmin;
-    font-size: 3vmin;
+
+.radio-right
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
-.radio-right h2{
-    margin: 0 2vmax 0;
-    padding-left: 4vmax;
-}
-.tag, .tag-header{
+
+.tag, .tag-header
+{
     display: flex;
     flex-direction: row;
 }
+
 .tag-block,.tag-header-block 
 {
     height:6vh;
     align-self: center;
 }
+
 .tag-block
 {
     width:2vh;
     background-color: rgb(218, 94, 49);
 }
+
 .tag-header-block 
 {
     width: 6vw;
     background-color: #94812e;
+}
+
+.radio-right h2
+{
+    margin: 0 2vmax 0;
+    padding-left: 4vmax;
+}
+
+h3
+{
+    align-self: center;
+    padding-left:5vmin;
+    font-size: 3vmin;
+}
+
+.radio-right img
+{
+    width: 5vmax;
+    height: 5vmax;
+    padding-left: 6vmax;
+}
+
+/*Footer*/
+
+.b-floater{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: coral;
+    padding: auto 5vmax;
+    height: 300px;
+    width: 100vmax;
+}
+.b-floater h2{
+    padding-top:10vmin;
+}
+
+@media(max-width:900px)
+{
+    .landing img,.nav-bar button, .tag-header-block,.tag-block
+    {
+        display: none;
+    }
+    .hero
+    {
+        background-color: rgba(0,0,0,0);
+    }
+    .title
+    {
+        width: 99vw;
+    }
+    
+    .menu
+    {
+        cursor: pointer;
+        display: block;
+        background-image: url("assets/media/menu-button.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        left: 90vw;
+        bottom: 45vh;
+        width: 5vmax;
+        height: 5vmax;
+    }
+    
+    .title-block-1, .title-block-2, .hero button
+    {
+        background-color: rgb(218, 94, 49);
+    }
+    .landing
+    {
+        background-image: url("assets/media/jean-landing.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .radio
+    {
+        flex-direction: column-reverse;
+    }
+    .side
+    {
+        align-self: center;
+        padding: 30px 0;
+    }
+    .radio-right
+    {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .radio-right h2
+    {
+        width:100%;
+        padding-left: 0;
+        padding-bottom: 5vh;
+    }
+    .tag
+    {
+        width:50%;
+    }
+    .tag img
+    {
+        padding: 8px;
+        width: 50px;
+        height: 50px;
+    }
+
+    
 }
